@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5% /*% de 16 = 10px*/
+}
+body{
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+main{
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 10rem;
+}
+.container{
+    width: 100%;
+    max-width: 65rem;
+    margin: auto;
+    position: relative;
+}
+.caja_trasera{
+    width: 100%;
+    padding: 1rem 2rem ;
+    display: flex;
+    justify-content: flex-end;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(0, 128, 255, 0.5);
+}
+.caja_trasera div{
+    margin: 10rem 4rem;
+    color:white;
+}
+.caja_trasera div p{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    align-items: flex-end;
+}
+.caja_trasera div h3{
+    font-weight: 400;
+    font-size: 2.6rem;
+    align-items: flex-end;
+}
+/*Formulario*/
+.login{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 38rem;
+    position: relative;
+    top: -15rem;
+    left: 1rem;
+}
+.login form{
+    width: 100%;
+    padding: 8rem 2rem;
+    background: #fff;
+    position: absolute;
+    border-radius: 2rem;
+
+}
+.login form h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #46A2FD;
+}
+.login form input{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: none;
+    background: #F2F2F2;
+    font-size: 1.6rem;
+    outline: none;
+}
+.login form button{
+    padding: 1rem 4rem;
+    margin-top: 4rem;
+    border: none;
+    font-size: 1.5rem;
+    background: #46a2fd;;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        margin-top: 10rem;
+    }
+    .caja_trasera{
+        max-width: 35rem;
+        height: 15rem;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja_trasera div{
+        margin: 0.8rem;
+        position: absolute;
+    }
+    .login{
+        top: -1rem;
+        left: -0.5rem;
+        margin: auto;
+    }
+    .login form{
+        position: relative;
+    }
+}
